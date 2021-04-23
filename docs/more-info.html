@@ -11,13 +11,15 @@
 
   <body>
     <div class="page">
-      <header class="page__header">
+      <header class="header">
 
-        <a class="header__nav" href="https://adalab.es/" title="Adalab"></a>
+        <a class="button header__menu" href="https://adalab.es/" title="Adalab"></a>
 
         <h1 class="header__title" title="Otra página del starter kit">Otra página del starter kit</h1>
         <p class="header__claim">In hac habitasse platea dictumst.</p>
-        <button class="header__button--scroll"></button>
+        <button class="button header__button--scroll">
+          <a class="button__a" href="#main"></a>
+        </button>
       </header>
       <main>
         <p>
@@ -26,14 +28,33 @@
           que te ha traído hasta aquí.
         </p>
       </main>
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <footer class="footer">
+        <button class="button footer__button--scroll">
+          <a class="button__a" href="#main"></a>
+        </button>
 
-        </small>
+        <nav class="footer__nav">
+          <ul class="footer__nav--menu">
+            <li class="nav__li"><a class="link" href="#" title="Articles">Articles</a></li>
+            <li class="nav__li"><a class="link" href="#" title="Books">Books</a></li>
+            <li class="nav__li"><a class="link" href="#" title="Events">Events</a></li>
+            <li class="nav__li"><a class="link" href="#" title="Reasons">Reasons</a></li>
+            <li class="nav__li"><a class="link" href="#" title="Tips">Tips</a></li>
+          </ul>
+
+          <ul class="footer__nav--menu">
+            <li class="nav__li"><a class="link" href="#" title="Twitter">Twitter</a></li>
+            <li class="nav__li"><a class="link" href="#" title="Instagram">Instagram</a></li>
+            <li class="nav__li"><a class="link" href="#" title="Mastodon Oficial">Mastodon.social</a></li>
+          </ul>
+        </nav>
+
+        <p>&copy; 2021
+          <small>
+            we love components
+          </small>
+        </p>
       </footer>
-
     </div>
     <script src="./assets/js/main.js"></script>
   </body>

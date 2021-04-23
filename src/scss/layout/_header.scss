@@ -1,4 +1,4 @@
-.page__header {
+.header {
   background: url(../images/cover.jpg) center top no-repeat;
   background-size: cover;
   color: $ice-blue;
@@ -12,27 +12,22 @@
   justify-content: end;
   gap: 1.5rem;
 
-  .header__nav {
+  &__title {
+    font-size: 42px;
+  }
+
+  &__menu {
     background: $cerulean url(../images/ico-menu.svg) center no-repeat;
     background-size: 45%;
-    height: 44px;
-    width: 44px;
 
     position: fixed;
     top: 0;
     left: 0;
   }
 
-  .header__title {
-    font-size: 42px;
-  }
-
-  .header__button--scroll {
+  &__button--scroll {
     background: $ice-blue url(../images/ico-scroll-down.svg) center 18px
       no-repeat;
-    border: none;
     border-radius: 50%;
-    height: 44px;
-    width: 44px;
   }
 }

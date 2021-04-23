@@ -9,3 +9,14 @@ h3,
 h4 {
   font-family: $font-h;
 }
+
+.button {
+  border: none;
+  min-height: 44px;
+  min-width: 44px;
+
+  &__a {
+    padding: 0.8rem 1.3rem;
+    border-radius: 50%;
+  }
+}
