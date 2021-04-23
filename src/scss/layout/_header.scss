@@ -1,5 +1,38 @@
 .page__header {
+  background: url(../images/cover.jpg) center top no-repeat;
+  background-size: cover;
+  color: $ice-blue;
+  height: 100vh;
+  text-align: center;
+  padding: 3rem;
+
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: end;
+  gap: 1.5rem;
+
+  .header__nav {
+    background: $cerulean url(../images/ico-menu.svg) center no-repeat;
+    background-size: 45%;
+    height: 44px;
+    width: 44px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .header__title {
+    font-size: 42px;
+  }
+
+  .header__button--scroll {
+    background: $ice-blue url(../images/ico-scroll-down.svg) center 18px
+      no-repeat;
+    border: none;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+  }
 }
