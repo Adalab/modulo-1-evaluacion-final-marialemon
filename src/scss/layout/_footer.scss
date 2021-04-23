@@ -7,22 +7,26 @@
   display: flex;
   flex-flow: column wrap;
   align-content: center;
-  gap: 2rem;
+  gap: 3rem;
 
   &__button--scroll {
     background: $ice-blue url(../images/ico-arrow.svg) center no-repeat;
     border-radius: 50%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 
     position: absolute;
     transform: translate(0, -70px);
   }
 
-  &__nav {
+  &__nav,
+  &__copyright {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    gap: 2rem;
+    gap: 3rem;
+  }
 
+  &__nav {
     text-transform: uppercase;
 
     &--menu {
@@ -35,5 +39,9 @@
         padding: 0.2rem 1.2rem;
       }
     }
+  }
+
+  &__copyright {
+    gap: 1rem;
   }
 }
