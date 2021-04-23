@@ -19,6 +19,7 @@
   &__menu {
     background: $cerulean url(../images/ico-menu.svg) center no-repeat;
     background-size: 45%;
+    border-radius: 0;
 
     position: fixed;
     top: 0;
@@ -28,6 +29,5 @@
   &__button--scroll {
     background: $ice-blue url(../images/ico-scroll-down.svg) center 18px
       no-repeat;
-    border-radius: 50%;
   }
 }

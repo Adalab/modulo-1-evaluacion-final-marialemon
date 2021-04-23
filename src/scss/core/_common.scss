@@ -10,13 +10,17 @@ h4 {
   font-family: $font-h;
 }
 
+h2 {
+  text-transform: capitalize;
+}
+
 .button {
   border: none;
   min-height: 44px;
   min-width: 44px;
+  border-radius: 2rem;
 
   &__a {
     padding: 0.8rem 1.3rem;
-    border-radius: 50%;
   }
 }
