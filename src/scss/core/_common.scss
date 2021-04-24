@@ -1,12 +1,12 @@
 :root {
   font-family: $font-main;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: $font-h;
 }
 
@@ -14,7 +14,13 @@ h2 {
   text-transform: capitalize;
 }
 
+h3,
+.text {
+  line-height: 1.7rem;
+}
+
 .button {
+  background: white;
   border: none;
   min-height: 44px;
   min-width: 44px;
@@ -22,5 +28,8 @@ h2 {
 
   &__a {
     padding: 0.8rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
   }
 }

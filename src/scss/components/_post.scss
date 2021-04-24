@@ -1,0 +1,25 @@
+.main {
+  &__post {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    gap: 1rem;
+
+    &__category {
+      color: $lightblue;
+      text-transform: capitalize;
+    }
+
+    &__text {
+      color: $greyish-brown;
+    }
+
+    .button {
+      border: medium solid $c;
+
+      &__a {
+        color: $c;
+      }
+    }
+  }
+}
