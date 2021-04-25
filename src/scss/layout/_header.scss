@@ -13,8 +13,23 @@
   gap: 1.5rem;
 
   &__title {
-    font-size: 42px;
+    font-size: 12vw;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 80px;
+      width: 70%;
+    }
+    @media (min-width: 1200px) {
+      font-size: 100px;
+      width: 60%;
+    }
+  }
+
+  &__claim {
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__menu {
@@ -29,5 +44,9 @@
 
   &__button--scroll {
     background: white url(../images/ico-scroll-down.svg) center 18px no-repeat;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 1rem 0;
   }
 }

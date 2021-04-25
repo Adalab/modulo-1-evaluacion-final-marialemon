@@ -11,14 +11,14 @@
 
   <body>
     <div class="page">
-      <header class="header">
+      <header id="header" class="header">
 
         <a class="button header__menu" href="https://adalab.es/" title="Adalab"></a>
 
         <h1 class="header__title" title="Otra página del starter kit">Otra página del starter kit</h1>
         <p class="header__claim">In hac habitasse platea dictumst.</p>
         <button class="button header__button--scroll">
-          <a class="button__a" href="#main"></a>
+          <a class="button__a" href="#main__section"></a>
         </button>
       </header>
       <main>
@@ -29,31 +29,38 @@
         </p>
       </main>
       <footer class="footer">
-        <button class="button footer__button--scroll">
-          <a class="button__a" href="#main"></a>
+        <button class="button button--scroll">
+          <a class="button__a" href="#header"></a>
         </button>
 
-        <nav class="footer__nav">
-          <ul class="footer__nav--menu">
-            <li class="nav__li"><a class="link" href="#" title="Articles">Articles</a></li>
-            <li class="nav__li"><a class="link" href="#" title="Books">Books</a></li>
-            <li class="nav__li"><a class="link" href="#" title="Events">Events</a></li>
-            <li class="nav__li"><a class="link" href="#" title="Reasons">Reasons</a></li>
-            <li class="nav__li"><a class="link" href="#" title="Tips">Tips</a></li>
-          </ul>
+        <div class="footer__wrapper">
 
-          <ul class="footer__nav--menu">
-            <li class="nav__li"><a class="link" href="#" title="Twitter">Twitter</a></li>
-            <li class="nav__li"><a class="link" href="#" title="Instagram">Instagram</a></li>
-            <li class="nav__li"><a class="link" href="#" title="Mastodon Oficial">Mastodon.social</a></li>
-          </ul>
-        </nav>
+          <nav class="footer__nav">
+            <ul class="footer__nav--menu">
+              <li class="nav__li"><a class="link" href="#" title="Articles">Articles</a></li>
+              <li class="nav__li"><a class="link" href="#" title="Books">Books</a></li>
+              <li class="nav__li"><a class="link" href="#" title="Events">Events</a></li>
+              <li class="nav__li"><a class="link" href="#" title="Reasons">Reasons</a></li>
+              <li class="nav__li"><a class="link" href="#" title="Tips">Tips</a></li>
+            </ul>
+          </nav>
 
-        <p class="footer__copyright">&copy; 2021
-          <small>
-            we &#10084 components
-          </small>
-        </p>
+          <nav class="footer__nav">
+            <ul class="footer__nav--menu">
+              <li class="nav__li"><a class="link" href="#" title="Twitter">Twitter</a></li>
+              <li class="nav__li"><a class="link" href="#" title="Instagram">Instagram</a></li>
+              <li class="nav__li"><a class="link" href="#" title="Mastodon Oficial">Mastodon.social</a></li>
+            </ul>
+          </nav>
+
+          <p class="footer__copyright">&copy; 2021
+            <small>
+              we &#10084 components
+            </small>
+          </p>
+
+        </div>
+
       </footer>
     </div>
     <script src="./assets/js/main.js"></script>

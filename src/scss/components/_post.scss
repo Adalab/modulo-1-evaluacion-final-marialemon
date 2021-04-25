@@ -5,6 +5,11 @@
     align-items: start;
     gap: 1rem;
 
+    @media (min-width: 768px) {
+      max-width: 730px;
+      margin: 0 auto;
+    }
+
     &__category {
       color: $lightblue;
       text-transform: capitalize;
