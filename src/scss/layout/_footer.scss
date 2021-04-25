@@ -2,9 +2,7 @@
   background: $dark-grey-blue;
   color: white;
   padding: 3rem;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  @include flexColumnCenter();
 
   .button--scroll {
     background: white url(../images/ico-arrow.svg) center no-repeat;
@@ -14,9 +12,7 @@
   }
 
   &__wrapper {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+    @include flexColumnCenter();
     gap: 3rem;
     text-align: center;
 
@@ -30,9 +26,7 @@
 
   &__nav,
   &__copyright {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+    @include flexColumnCenter();
     gap: 3rem;
   }
 

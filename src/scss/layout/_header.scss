@@ -1,14 +1,12 @@
 .header {
   background: url(../images/cover.jpg) center top no-repeat;
   background-size: cover;
-  color: $ice-blue;
+  color: white;
   height: 100vh;
   text-align: center;
   padding: 3rem 0;
 
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  @include flexColumnCenter();
   justify-content: end;
   gap: 1.5rem;
 
@@ -43,6 +41,7 @@
   }
 
   &__button--scroll {
+    animation: 2s bounceOutUp ease-in-out infinite;
     background: white url(../images/ico-scroll-down.svg) center 18px no-repeat;
   }
 

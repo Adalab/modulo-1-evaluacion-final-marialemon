@@ -2,33 +2,45 @@
   &__post,
   &__section {
     padding: 3rem 1.5rem;
+    margin: 0 auto;
   }
 
   &__section {
     background: $ice-blue;
     padding-bottom: 4rem;
-
     text-align: center;
+    max-width: 1200px;
+
     display: grid;
     grid-template-rows: 30px repeat(3, 1fr) 40px;
-    gap: 3rem;
+    gap: 2rem;
     justify-items: center;
-
-    &__article {
-      width: 70%;
-    }
 
     .button {
       background: $c;
 
       &__a {
         color: white;
+        @media (min-width: 768px) {
+          padding: 0.6rem 4rem;
+        }
+        &:hover {
+          color: $c;
+          transition: color ease 0.5s;
+        }
+      }
+
+      &:hover {
+        background: white;
+        border: medium solid $c;
+        transition: background ease 0.5s;
       }
     }
 
     @media (min-width: 768px) {
+      gap: 3rem;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 30px 1fr 40px;
+      grid-template-rows: 30px 1fr 50px;
 
       &__h2 {
         grid-column: span 3;

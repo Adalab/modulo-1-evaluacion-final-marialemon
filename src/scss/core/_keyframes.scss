@@ -1,0 +1,15 @@
+@keyframes bounceOutUp {
+  from {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+}
