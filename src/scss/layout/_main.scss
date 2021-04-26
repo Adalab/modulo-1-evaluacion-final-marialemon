@@ -8,6 +8,7 @@
     background: $ice-blue;
     padding-bottom: 4rem;
     text-align: center;
+    font-size: 18px;
 
     display: grid;
     grid-template-rows: 30px repeat(3, 1fr) 40px;
@@ -38,7 +39,7 @@
     @media (min-width: 768px) {
       justify-content: center;
       gap: 3rem 9rem;
-      grid-template-columns: 250px 250px 250px;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 30px 1fr 50px;
 
       &__h2 {
@@ -48,6 +49,10 @@
       .button {
         grid-column: span 3;
       }
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: 250px 250px 250px;
     }
   }
 }
