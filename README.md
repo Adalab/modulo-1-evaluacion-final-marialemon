@@ -17,7 +17,7 @@ En el Kit hay 3 tipos de ficheros y carpetas:
 - La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
 - Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
 
-## Estructura de carpetas
+### Estructura de carpetas
 
 La estructura de carpetas tiene esta pinta:
 
@@ -39,11 +39,11 @@ src
     └─ partials
 ```
 
-## Más información sobre el Starter Kit utilizado
+### Más información sobre el Starter Kit utilizado
 
 > Para más información sobre [Adalab Web Starter Kit](https://github.com/Adalab/adalab-web-starter-kit) recomiendo visitar su repositorio.
 
-### Pasos a seguir para trabajar con el Starter Kit:
+## Si quieres clonar este repositorio necesitarás seguir estos pasos para trabajar con el Starter Kit:
 
 1. **Instala las dependencias** locales ejecutando en la terminal el comando:
 
@@ -51,7 +51,7 @@ src
 npm install
 ```
 
-1. Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+2. Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
 
 ```bash
 npm start
@@ -65,9 +65,9 @@ Este comando:
   - Convierte los ficheros SASS en CSS.
   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
 
-1. Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+3. Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
-1. Si quieres utilizar Github Pages para generar tu página para producción, ejecuta el comando:
+4. Si quieres utilizar Github Pages para generar tu página para producción, ejecuta el comando:
 
 ```bash
 npm run docs
