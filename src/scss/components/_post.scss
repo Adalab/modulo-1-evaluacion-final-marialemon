@@ -23,22 +23,16 @@
     .button {
       background: white;
       border: medium solid $c;
+      color: $c;
 
-      &__a {
-        color: $c;
-        @media (min-width: 768px) {
-          padding: 0.6rem 4rem;
-        }
-
-        &:hover {
-          color: white;
-          transition: color ease 0.5s;
-        }
+      @media (min-width: 768px) {
+        padding: 0.6rem 4rem;
       }
 
       &:hover {
+        color: white;
         background: $c;
-        transition: background ease 0.5s;
+        transition: color ease 0.5s, background ease 0.5s;
       }
     }
   }

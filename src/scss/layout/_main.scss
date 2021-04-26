@@ -11,36 +11,32 @@
     font-size: 18px;
 
     display: grid;
-    grid-template-rows: 30px repeat(3, 1fr) 40px;
+    grid-template-rows: 30px repeat(3, 1fr) auto;
     gap: 2rem;
     justify-items: center;
 
     .button {
       background: $c;
-
-      &__a {
-        color: white;
-        @media (min-width: 768px) {
-          padding: 0.6rem 4rem;
-        }
-        &:hover {
-          color: $c;
-          transition: color ease 0.5s;
-        }
-      }
+      color: white;
+      border: medium solid $c;
 
       &:hover {
         background: white;
         border: medium solid $c;
-        transition: background ease 0.5s;
+        color: $c;
+        transition: background ease 0.5s, color ease 0.5s;
+      }
+
+      @media (min-width: 768px) {
+        padding: 0.6rem 4rem;
       }
     }
 
     @media (min-width: 768px) {
       justify-content: center;
-      gap: 3rem 9rem;
+      gap: 3rem;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 30px 1fr 50px;
+      grid-template-rows: 30px 1fr auto;
 
       &__h2 {
         grid-column: span 3;
@@ -52,6 +48,7 @@
     }
 
     @media (min-width: 1200px) {
+      gap: 3rem 9rem;
       grid-template-columns: 250px 250px 250px;
     }
   }

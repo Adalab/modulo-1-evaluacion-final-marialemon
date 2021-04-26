@@ -41,15 +41,11 @@ h3,
 }
 
 .button {
-  border: none;
   min-height: 44px;
   min-width: 44px;
   border-radius: 2rem;
-
-  &__a {
-    padding: 0.6rem 1.3rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-  }
+  padding: 0.6rem 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
 }
