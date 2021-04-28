@@ -2,6 +2,12 @@
   &__post,
   &__section {
     padding: 3rem 1.5rem;
+
+    .button {
+      background: white;
+      border: medium solid $c;
+      color: $c;
+    }
   }
 
   &__section {
@@ -15,22 +21,22 @@
     gap: 2rem;
     justify-items: center;
 
-    .button {
-      background: $c;
-      color: white;
-      border: medium solid $c;
+    //  .button {
+    //    background: $c;
+    //    color: white;
+    //    border: medium solid $c;
 
-      &:hover {
-        background: white;
-        border: medium solid $c;
-        color: $c;
-        transition: background ease 0.5s, color ease 0.5s;
-      }
+    //  &:hover {
+    //    background: white;
+    //    border: medium solid $c;
+    //    color: $c;
+    //    transition: background ease 0.5s, color ease 0.5s;
+    //  }
 
-      @media (min-width: 768px) {
-        padding: 0.6rem 4rem;
-      }
+    @media (min-width: 768px) {
+      padding: 0.6rem 4rem;
     }
+    //   }
 
     @media (min-width: 768px) {
       justify-content: center;
